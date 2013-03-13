@@ -16,4 +16,3 @@
 </head>
 <body>
 	<div class='top-nav'></div>
-	<div class='wrapper'>

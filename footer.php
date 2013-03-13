@@ -10,7 +10,6 @@
  * @since Good Place 0.1
  */
 ?>
-	</div>
 	<div class='bottom-nav'>
 		<div class='other-links'></div>
 		<hr>
