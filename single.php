@@ -1,9 +1,12 @@
 <?php get_header(); ?>
 <div class="single">
-<?php while(have_posts()) : the_post(); ?>
+<?php if(have_posts()) : the_post(); ?>
 	<div class="article">
-		<?php get_template_part('content', get_post_format()); ?>
+		<h2 class='article-title'><?php the_title(); ?></h2>
+		<?php the_content() ?>
+		<div class='float-fix'></div>
 	</div>
-<?php endwhile; ?>
+<?php else: ?>
+<?php endif; ?>
 </div>
 <?php get_footer(); ?>
