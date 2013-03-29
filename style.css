@@ -71,7 +71,6 @@ body { background-color: #E6E6E6; }
 /*Footer Rules*/
 /*Home Rules*/
 #home-wrapper {
-	background-image: url('1.jpg');
 	background-position: center;
 	max-width: 920px;
 	margin-left: auto;

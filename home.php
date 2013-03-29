@@ -37,4 +37,5 @@
 		?>
 	</ul>
 </div>
+<script type="text/javascript" src="<?php bloginfo("template_url");?>/scripts/home.js"></script>
 <?php get_footer() ?>

@@ -4,6 +4,7 @@
 		if(have_posts()) {
 			the_post();
 			get_template_part('content');
+			rewind_posts();
 		} 
 		else
 			get_template_part('404');
