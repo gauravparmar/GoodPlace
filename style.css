@@ -18,6 +18,7 @@ Version: 1.0
 	h5 {font-size: 24px; font-weight: normal;}
 	h6 {font-size: 18px; font-weight: normal;}
 	a {color:inherit; text-decoration: none; }
+	ul {list-style: none;}
 	/*Font Rules*/
 	.font-headline { font-family: 'Monoton', cursive, 宋体; }
 	.font-title { font-family: 'Keania One', cursive, 宋体; }
@@ -35,18 +36,37 @@ Version: 1.0
 	}
 	.misc-link:hover { opacity: 1.0; }
 	.misc-spliter { display: block; height:2px; background-color: white; }
-
+	.misc-spliter-v { margin-left:2px; margin-right: 2px; display: inline-block; width: 2px; height: 4px; background-color: white; }
 /*Header Rules*/
-body {
-	background-color: #E6E6E6;
-}
+body { background-color: #E6E6E6; }
 #top-nav { width:100%; height:25px; background-color:black; opacity: 0.8; }
 #bot-nav {
 	bottom: 0;
-	width:100%;
+	width:920px;
 	height:60px;
 	background-color:black;
 	opacity: 0.8;
+	margin-left: auto;
+	margin-right: auto;
+}
+#top-nav #top-bar { width:920px; margin-left: auto; margin-right: auto; color: #888; }
+#top-nav #top-post-info {
+	margin-top: 5px;
+	display: inline-block;
+	font-size: 14px; 
+	display:inline-block; 
+	color: white;
+}
+#top-nav #top-bar a { 
+	-webkit-transition: color 0.5s;
+	-moz-transition: color 0.5s;
+	transition: color 0.5s;
+}
+#top-nav #top-bar a:hover { color: #888; }
+#top-nav #top-shortcuts {
+	display: inline-block;
+	margin-right: 20px;
+	float: right;
 }
 /*Footer Rules*/
 /*Home Rules*/
@@ -60,7 +80,6 @@ body {
 
 #home-wrapper #banner {
 	background-color: black;
-
 	text-align: center;
 	opacity: 0.9;
 	color: white;
@@ -68,7 +87,7 @@ body {
 #home-wrapper #categories{
 	text-align: center; 
 	list-style: none;
-	font-size: 14px;
+	font-size: 16px;
 }
 #home-wrapper .category {
 	background-color: black;
@@ -82,6 +101,17 @@ body {
 	transition:opacity 0.5s;
 }
 #home-wrapper .category:hover {opacity: 0.9;}
-#home-wrapper .contents {list-style: none;width: 225px;height: 625px;}
-#home-wrapper .item { padding: 0 2px 0 2px; }
+#home-wrapper .contents {list-style: none;width: 225px;height: 625px;margin-top:15px;}
+/*Single Rules*/
+#single-wrapper {margin-left: auto;margin-right: auto;width: 920px;}
+#single-wrapper #title {text-align: right;}
+#single-wrapper #article {text-indent: 15px; line-height: 150%;padding: 0 15px 0 15px;}
+#single-wrapper #article a {
+	margin-top: 15px;
+	text-decoration: underline;
+	-moz-transition:color 0.5s;
+	-webkit-transition:color 0.5s;
+	transition:color 0.5s;
+}
+#single-wrapper #article a:hover {color:#888;}
 /*About Rules*/
