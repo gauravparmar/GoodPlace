@@ -1,0 +1,51 @@
+/*
+Theme Name: Good Place
+Author: idy	
+Version: 1.0
+*/
+
+/*Generic Rules*/
+	/*Font imports*/
+	@import url(http://fonts.googleapis.com/css?family=Galdeano);
+	@import url(http://fonts.googleapis.com/css?family=Monoton);
+	@import url(http://fonts.googleapis.com/css?family=Keania+One&subset=latin,latin-ext);
+	/*Layouts Rules*/
+	* {margin:0; padding:0;}
+	h1 {font-size: 96px;}
+	h2 {font-size: 64px;}
+	h3 {font-size: 48px;}
+	h4 {font-size: 32px;}
+	h5 {font-size: 24px;}
+	h6 {font-size: 18px;}
+	a {
+		text-decoration:underline; 
+		font-style: italic;
+		color:inherit; 
+		-moz-transition:color 0.5s;
+		-webkit-transition:color 0.5s;
+		transition:color 0.5s;
+
+	}
+	a:hover { color: #999; }
+	/*Font Rules*/
+	.font-headline { font-family: 'Monoton', cursive, 宋体; }
+	.font-title { font-family: 'Keania One', cursive, 宋体; }
+	.font-subtitle { font-family: 'Galdaeno', sans-serif, 宋体; font-weight: 400px; font-size:1.2em;}
+	.font-content { font-family: 'Galdaeno', sans-serif, 宋体; font-weight: 200px; font-size:1.0em;}
+	/*Opacity Rules*/
+	/*Helper Rules*/
+/*Header Rules*/
+#top-nav {width:100%;height:25px;background-color:black;opacity: 0.8;}
+#bot-nav {width:100%;height:25px;background-color:black;opacity: 0.8;}
+/*Footer Rules*/
+/*Home Rules*/
+#home-wrapper {
+	position:relative; 
+	top:0; 
+	left:0; 
+	width:800px;
+	height: 960px;
+	overflow: hidden;margin-left: auto;margin-right: auto;}
+#home-wrapper #backgroud {position:absolute;top:0;left:0;}
+#home-wrapper #cat-ul {position: absolute; top:0; left:0;}
+/*About Rules*/
