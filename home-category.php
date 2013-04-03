@@ -7,8 +7,8 @@
 		<?php 
 			global $post;
 			$posts = get_posts(array(
-				'posts_per_page' 	=> 15,
-				'numberposts'		=> 15,
+				'posts_per_page' 	=> 18,
+				'numberposts'		=> 18,
 				'offset'			=> 0,
 				'category'			=> $category->cat_ID
 			));

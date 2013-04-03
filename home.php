@@ -3,6 +3,12 @@
 	<div id='banner'>
 		<h3 class="font-headline">GOOD PLACE</h3>
 	</div>
+	<a class="misc-link" id="prev" href="<?php bloginfo("url");?>">
+		<img src="<?php bloginfo("template_url") ?>/icons/go-previous.png">
+	</a>
+	<a class="misc-link" id="next" href="<?php bloginfo("url");?>">
+		<img src="<?php bloginfo("template_url") ?>/icons/go-next.png">
+	</a>
 	<ul id='categories'>
 		<?php 
 			global $category;
@@ -41,6 +47,7 @@
 				get_template_part("home", "category");
 			}
 		?>
+		<li id='image-desc' class='font-content'></li>
 	</ul>
 </div>
 <script type="text/javascript" src="<?php bloginfo("template_url");?>/scripts/home.js"></script>
