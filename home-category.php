@@ -21,9 +21,6 @@
 			<span class='title font-content misc-link'>
 				<a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
 			</span>
-			<span class='comments font-content misc-link'>
-				<a href="<?php comments_link() ?>">(<?php echo $post->comment_count; ?>)</a>
-			</span>
 		</li>
 		<?php endforeach; ?>
 	</ul>

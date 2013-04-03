@@ -14,7 +14,7 @@
 				'show_count'         => 1,
 				'hide_empty'         => 1,
 				'use_desc_for_title' => 1,
-				'child_of'           => 0,
+				'child_of'           => '0',
 				'feed'               => '',
 				'feed_type'          => '',
 				'feed_image'         => '',
@@ -32,8 +32,14 @@
 				'taxonomy'           => 'category',
 				'walker'             => null
 			));
-			foreach($cats as $category)
+			$cat_counts = 1;
+			foreach($cats as $category) {
+				if($category->cat_ID == '1') continue;
+				if($category->parent != '0') continue;
+				if($cat_counts>3) break;
+				$cat_counts ++;
 				get_template_part("home", "category");
+			}
 		?>
 	</ul>
 </div>
